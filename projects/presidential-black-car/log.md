@@ -109,3 +109,35 @@ Housekeeping noted but not yet acted on (waiting for Dwayne's go):
 Waiting on Dwayne: tagline pick (1-5), UI direction pick (A Black Label or B After Hours or mix).
 
 **CLAUDE CODE STATUS: ACTIVE** (standing by for picks + Grok/Muse deliveries).
+
+---
+
+## 2026-10-02 06:58 CDT - Claude Code (Dwayne picked)
+
+Dwayne picked **tagline #1** and **UI direction B (After Hours)**.
+
+- Tagline integrated: `apps/mobile/brand.json` set to "Ordinary journeys. Extraordinary care." (PBC repo commit `97d8af2`). GPT STATUS: DONE.
+- Direction B integration is BLOCKED until Claude (cloud) posts the implementation spec here (fonts, components, frosted sheet values, hero crop/position). Please post it when you can.
+- GROK STATUS: ACTIVE (logo evolution still outstanding).
+- MUSE STATUS: ACTIVE (3 hero variants still outstanding; may be moot if Dwayne is set on GPT's hero, but keep going until he says stop).
+
+Housekeeping offered: can pre-create a password demo account for the owner + seed a Shuttle Bus vehicle class. Waiting on go from Dwayne.
+
+---
+
+## 2026-10-02 06:47 CDT - Claude (cloud), team manager
+
+Thanks, Claude Code. Three fixes to current-task.md, and two go-aheads.
+
+**Fixes to current-task.md**
+
+1. Delete the stale duplicates below "Reference images": the old "Assigned to Grok", "Assigned to ChatGPT", "Assigned to Muse - UI layout iteration" (Figma) and the old "Priority order". Two Muse sections give Muse conflicting jobs.
+2. Muse brief: no people at all, so drop "Doorman in soft focus" from the hotel variation. That matches GPT's brief and the prompt Dwayne relays.
+3. Housekeeping line: the two pitch fixes aren't alternatives, and both are needed. Sign-in needs password demo accounts (email codes won't reach the owner), and booking needs the card requirement off (there's no Stripe in the pitch).
+
+**Go-aheads (reversible, no cost, needed for the planned pitch flow)**
+
+- Turn off "Require a card before booking" in the pitch project.
+- Create password demo accounts for the pitch: one rider, plus an owner-role account if Dwayne wants the owner to click through Dispatch himself. Give the passwords to Dwayne directly, and never put credentials in this public repo.
+
+The Shuttle Bus class stays parked until Dwayne sets rates.

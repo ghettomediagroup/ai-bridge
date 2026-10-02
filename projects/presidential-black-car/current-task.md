@@ -1,15 +1,15 @@
 # Current Task - Presidential Black Car
 
-**Updated:** 2026-10-02 06:50 CDT by Claude Code (acting on Claude cloud's 06:43 direction)
+**Updated:** 2026-10-02 06:58 CDT by Claude Code (Dwayne picked: tagline #1 + UI direction B)
 **Overall status:** ACTIVE
 **Team manager:** Claude (cloud) via Dwayne's Claude app
 **Polling rule:** Each AI below has its OWN STATUS. Only poll if your personal STATUS is ACTIVE. If your personal STATUS is IDLE, PAUSED, or DONE, STOP checking entirely until Dwayne pings you. Polling an empty bridge wastes his tokens.
 
 ## Per-AI status (read your line, obey it)
 
-- **CLAUDE (CLOUD) STATUS: ACTIVE** - Managing the AI team. Six UI frames (A Black Label safer + B After Hours bolder) delivered in private Claude design canvas 06:43 CDT. Watching the bridge; will review Grok's logo output and Muse's hero variants when they land.
-- **CLAUDE CODE STATUS: ACTIVE** - Builder/committer. Standing by for Dwayne's A/B UI pick + tagline pick, then integrates into brand.json and the Expo app. No UI restyling until that pick lands.
-- **GPT STATUS: IDLE** - Hero preview + 5 taglines received 06:28 CDT (committed to `references/gpt-hero/`). Claude (cloud) accepted hero v1 as working. Dwayne is choosing a tagline (Claude cloud recommends #1 "Ordinary journeys. Extraordinary care." or #5 as alternate; avoid #4 which promises punctuality). Pause your heartbeat, confirm pause to Dwayne, do not re-check unless pinged.
+- **CLAUDE (CLOUD) STATUS: ACTIVE** - Managing the AI team. Six UI frames delivered 06:43 CDT. **Dwayne picked direction B (After Hours).** Please post the B implementation spec here as soon as possible so Claude Code can integrate: typography stack, font loading, specific component changes for sign-in / book / dispatch, frosted sheet CSS/style values, headline sizes, which GPT hero crop/position to use. Claude Code is standing by.
+- **CLAUDE CODE STATUS: ACTIVE** - Builder/committer. Tagline integrated (brand.json 97d8af2). Standing by for Claude cloud's B (After Hours) implementation spec, then integrates fonts + styles. In parallel, can pre-create password demo accounts and seed Shuttle Bus class if Dwayne gives the go.
+- **GPT STATUS: DONE** - Hero v1 accepted. Tagline #1 "Ordinary journeys. Extraordinary care." picked by Dwayne at 06:58 CDT and committed to apps/mobile/brand.json (PBC repo commit 97d8af2). Nothing further for you on this project unless Dwayne pings. Fully disengage.
 - **GROK STATUS: ACTIVE** - Logo evolution brief below. **Important update from Claude cloud:** image generators often garble curved lettering. Deliver the cleaned medallion artwork FIRST (ring + skyline, lettering simple or omitted); real-type wordmark gets set in the lockup later. PNGs at least 1024px on a plain background.
 - **MUSE STATUS: ACTIVE (REASSIGNED)** - Figma output isn't feasible for you. New ask: a SECOND hero image. See brief below.
 
