@@ -1,16 +1,61 @@
 # Current Task - Presidential Black Car
 
-**Updated:** 2026-10-02 06:35 CDT by Claude Code
+**Updated:** 2026-10-02 06:50 CDT by Claude Code (acting on Claude cloud's 06:43 direction)
 **Overall status:** ACTIVE
+**Team manager:** Claude (cloud) via Dwayne's Claude app
 **Polling rule:** Each AI below has its OWN STATUS. Only poll if your personal STATUS is ACTIVE. If your personal STATUS is IDLE, PAUSED, or DONE, STOP checking entirely until Dwayne pings you. Polling an empty bridge wastes his tokens.
 
 ## Per-AI status (read your line, obey it)
 
-- **GPT STATUS: IDLE** - Hero preview + 5 taglines received 06:28 CDT (committed to `references/gpt-hero/`). Dwayne is choosing a tagline. No new ask. Pause your heartbeat, confirm pause to Dwayne, do not re-check unless Dwayne re-pings. Possible next task: a daytime hero variant OR a hero that keeps the current gold/paper mix. Wait for direction.
-- **GROK STATUS: ACTIVE** - Logo evolution brief below. Re-read every 60 seconds until you deliver or STATUS changes.
-- **MUSE STATUS: ACTIVE** - UI frame brief below. Re-read every 60 seconds until you deliver or STATUS changes.
+- **CLAUDE (CLOUD) STATUS: ACTIVE** - Managing the AI team. Six UI frames (A Black Label safer + B After Hours bolder) delivered in private Claude design canvas 06:43 CDT. Watching the bridge; will review Grok's logo output and Muse's hero variants when they land.
+- **CLAUDE CODE STATUS: ACTIVE** - Builder/committer. Standing by for Dwayne's A/B UI pick + tagline pick, then integrates into brand.json and the Expo app. No UI restyling until that pick lands.
+- **GPT STATUS: IDLE** - Hero preview + 5 taglines received 06:28 CDT (committed to `references/gpt-hero/`). Claude (cloud) accepted hero v1 as working. Dwayne is choosing a tagline (Claude cloud recommends #1 "Ordinary journeys. Extraordinary care." or #5 as alternate; avoid #4 which promises punctuality). Pause your heartbeat, confirm pause to Dwayne, do not re-check unless pinged.
+- **GROK STATUS: ACTIVE** - Logo evolution brief below. **Important update from Claude cloud:** image generators often garble curved lettering. Deliver the cleaned medallion artwork FIRST (ring + skyline, lettering simple or omitted); real-type wordmark gets set in the lockup later. PNGs at least 1024px on a plain background.
+- **MUSE STATUS: ACTIVE (REASSIGNED)** - Figma output isn't feasible for you. New ask: a SECOND hero image. See brief below.
 
-**Assigned to:** Grok (logo), ChatGPT (hero + copy, now IDLE), Muse (UI layout).
+## Assigned to Grok - Logo evolution (unchanged brief, image-gen caveat added)
+
+**Goal:** Evolve the existing medallion-and-wordmark identity so it reads modern-luxury without discarding what the owner recognizes.
+
+**Deliverables (4 options):**
+1. **Cleaned medallion.** Keep the circle + Chicago skyline motif. Simplify the inner engraving. **Keep lettering simple or leave it off entirely** - we'll set the real wordmark in type on top in the lockup. Gold `#B08D57` ring on near-black `#0E0E10`.
+2. **Horizontal lockup.** Medallion on the left, "PRESIDENTIAL BLACK CAR" wordmark on the right in italic serif. (If your image gen garbles the curved text in #1, just produce the medallion without text and we'll typeset the wordmark separately.)
+3. **Icon-only mark.** Just the medallion, no text. 1024x1024. For app icon, favicon, social avatar.
+4. **Monochrome stamp.** Medallion in a single color (all gold OR all paper) for printing on tinted-window decals, business cards, keyfob tags.
+
+**Constraints:** `#B08D57` gold, `#0E0E10` ink, `#F6F4EF` paper only. No stretch limos, top hats, crowns, chauffeur silhouettes. Readable at 48px AND 400px. No fake Latin mottos. No "EST. 20XX".
+
+**Submit back:** PNG files at 1024px+ on plain background + one sentence per option. Wrap in a `bridge-submit` block (ai: grok).
+
+## Assigned to Muse - Second hero image (REASSIGNED from UI frames)
+
+**Why reassigned:** Claude (cloud) is handling the UI frame deliverables since Muse (Meta AI) can't export Figma files. You instead give Dwayne a SECOND hero to choose between, so he has two options at pitch time.
+
+**Goal:** A second hero image on the same brief as GPT's, with **three variations**. Dwayne has the exact prompt text in his Claude app and will relay it.
+
+**Three scene variations:**
+1. **Hotel entrance.** Black SUV at the port cochere of an upscale Chicago hotel (Peninsula, Four Seasons vibe, not identifiable). Doorman in soft focus. Warm sconce lighting.
+2. **Chicago River.** Black SUV crossing or parked near a Chicago River bridge, mist on the water, Marina City or Wrigley Building silhouetted.
+3. **Skyline-forward.** Black SUV with the skyline more prominent and sharper than in GPT's version (GPT's background has strong bokeh; this one lets the city read).
+
+**Constraints:** Same as GPT's hero. 16:9, 1920x1080 min if your generator supports it (if 1600-ish is the ceiling, do that - we'll upscale). No people clearly identifiable, no plates, no vehicle logos. Mood: discreet luxury, warm interior glow, wet pavement OK.
+
+**Submit back:** 3 image URLs or files + one sentence per variation. Wrap in a `bridge-submit` block (ai: muse).
+
+## Assigned to Claude (cloud) - Team manager + UI frames
+
+- Six phone frames (A Black Label safer, B After Hours bolder) delivered to Dwayne's Claude app design canvas as of 06:43 CDT.
+- Fonts: Bodoni Moda + Jost (both on Google Fonts, available via `@expo-google-fonts`).
+- Waiting on Dwayne's A/B pick plus tagline pick. When he picks, post the implementation spec here (new log entry) so Claude Code can integrate.
+- Review Grok's logo and Muse's hero variants when they land; approve or redirect.
+
+## Priority order
+
+1. Dwayne picks tagline (1-5) and UI direction (A/B) - unblocks Claude Code integration
+2. Grok delivers logo options
+3. Muse delivers 3 hero variants
+4. Claude (cloud) reviews each, posts final spec
+5. Claude Code integrates winners into `apps/mobile/brand.json` and the UI, deploys to Cloudflare Pages
 
 ## How to read this file
 
