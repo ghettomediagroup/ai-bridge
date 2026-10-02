@@ -1,0 +1,19 @@
+Generation mode: built-in image_gen tool
+
+INITIAL PROMPT
+
+Use case: photorealistic-natural.
+Asset type: full-width website hero for the Presidential Black Car Chicago booking-app pitch demo.
+Create one photorealistic editorial luxury automotive photograph, landscape 16:9, 2560x1440 pixels (at least 1920x1080).
+Scene/backdrop: a quiet wet Chicago street at night with the downtown skyline behind it. Skyline buildings remain recognizably architectural, softly out of focus with tasteful bokeh. Natural warm streetlight reflections on damp asphalt. No active heavy rainfall.
+Subject: one glossy black Chevrolet Suburban, with the correct full-size long SUV proportions, parked, viewed from a natural front three-quarter angle. Completely unbranded: remove all badges, logos, lettering and license plates. Entire vehicle fits comfortably in the right 55 percent of the image. Subtle warm cabin lighting glows through dark tinted windows; no people inside or outside.
+Composition: vehicle is the sharp focal point on the RIGHT; preserve the LEFT 40 percent as dark, calm, low-detail negative space for a sign-in card to be added later. Keep skyline lights concentrated behind and above the vehicle, leaving the left side visually quiet. Grounded realistic tires, wheel geometry, glass and reflections.
+Mood and color: discreet, understated luxury, near-black charcoal, soft ivory highlights, restrained warm brass tones. Body contours remain legible against the night. Rich realistic detail and restrained editorial color grading.
+Constraints: deliver photograph only. No UI, no card, no type, no text, no watermarks, no logos, no visible license plates, no people, no neon, no purple/cyan lighting, no exaggerated rain streaks, no extreme cinematic lens flares. Do not replace the skyline with a Gaussian smudge.
+
+HIGHER-RESOLUTION EDIT REQUEST
+
+Edit the supplied hero photograph only to deliver a higher-resolution production asset. Preserve this exact composition, black unbranded Suburban, quiet negative space on the left, Chicago skyline, realistic wet street, warm cabin and street lighting, restrained editorial color, and no people, plates, text or logos. Output MUST be a true 16:9 image at 2048x1152 pixels or larger, preferably 2560x1440 pixels. The previous file is only 1672x941; do not output that smaller size. Increase real image resolution and preserve details without changing the scene or adding objects.
+
+Both returned 1672 x 941 pixels. Final preview is the second result. No local resizing or other image modification was applied.
+

@@ -1,82 +1,90 @@
 # Current Task - Presidential Black Car
 
-**Updated:** 2026-10-02 06:00 CDT by Claude Code
-**Status:** ACTIVE DELEGATION - visual polish for the pitch demo
-**Assigned to:** Grok (logo), ChatGPT (hero + copy), Muse (UI layout). Each delegation is scoped below.
+**Updated:** 2026-10-02 06:35 CDT by Claude Code
+**Overall status:** ACTIVE
+**Polling rule:** Each AI below has its OWN STATUS. Only poll if your personal STATUS is ACTIVE. If your personal STATUS is IDLE, PAUSED, or DONE, STOP checking entirely until Dwayne pings you. Polling an empty bridge wastes his tokens.
 
-## Recheck cadence
+## Per-AI status (read your line, obey it)
 
-Re-read this file at the START of every reply to Dwayne. If the Updated timestamp is newer than your last read, treat it as new direction. Compare the "Assigned to" lines to decide what is yours.
+- **GPT STATUS: IDLE** - Hero preview + 5 taglines received 06:28 CDT (committed to `references/gpt-hero/`). Dwayne is choosing a tagline. No new ask. Pause your heartbeat, confirm pause to Dwayne, do not re-check unless Dwayne re-pings. Possible next task: a daytime hero variant OR a hero that keeps the current gold/paper mix. Wait for direction.
+- **GROK STATUS: ACTIVE** - Logo evolution brief below. Re-read every 60 seconds until you deliver or STATUS changes.
+- **MUSE STATUS: ACTIVE** - UI frame brief below. Re-read every 60 seconds until you deliver or STATUS changes.
+
+**Assigned to:** Grok (logo), ChatGPT (hero + copy, now IDLE), Muse (UI layout).
+
+## How to read this file
+
+1. Check the Status line at the top. If PAUSED or DONE, stop. If ACTIVE, continue.
+2. Compare the Updated timestamp to when you last read. If unchanged, nothing new, go idle.
+3. Find your name under "Assigned to" and read the section with the matching header.
+4. When you have output, wrap it in a `bridge-submit` block and give it to Dwayne. He relays it to Claude Code which commits to `log.md` here.
 
 ## Backstory
 
-The Expo web app works end-to-end locally (sign-in, admin dispatch, Google-backed quote pricing). We are polishing visuals BEFORE deploying to Cloudflare Pages, so the pitch meeting with the actual Presidential Black Car owner lands clean.
+The Presidential Black Car Expo app works end-to-end locally (sign-in, admin dispatch, Google-backed quote pricing). We are polishing visuals before deploying to a public URL so the pitch meeting with the actual Presidential Black Car owner lands clean.
 
-**The owner already has a brand.** This is not a greenfield design job. The existing identity on presidentialblackcar.com (built on Wix) is:
+**The owner already has a brand.** This is not a greenfield design job. Existing identity on presidentialblackcar.com (built on Wix):
 
-- **Logo:** circular medallion in black and white. Inside the medallion, a stylized Chicago skyline silhouette with the words "PRESIDENTIAL BLACK CAR" curved along the top and (likely) the city/year curved along the bottom. Think "university seal" aesthetic.
-- **Wordmark:** "PRESIDENTIAL BLACK CAR" set in an italic serif (reads like Didot, Bodoni, or similar high-contrast display serif). All caps.
-- **Tagline:** "We Provide An Extraordinary Experience To An Ordinary Service." (Title Case on the live site.)
-- **Palette:** black `#0E0E10` background, white/paper text, muted gold `#B08D57` accents (Log In button, menu hover color).
-- **Hero image on the live site:** a HEAVILY blurred daytime shot of Chicago's downtown skyline (bright blue sky, high-rises in soft focus). Looks like a stock photo filtered through a strong Gaussian blur. It is the weakest element of the current site and the clearest upgrade target.
+- **Logo:** circular medallion in black and white. Chicago skyline silhouette inside, "PRESIDENTIAL BLACK CAR" curved along the top of the ring. University-seal aesthetic.
+- **Wordmark:** "PRESIDENTIAL BLACK CAR" in italic serif (reads like Didot or Bodoni, high-contrast display serif), all caps.
+- **Tagline (current, slightly awkward):** "We Provide An Extraordinary Experience To An Ordinary Service."
+- **Palette:** black `#0E0E10`, white/paper text, muted gold `#B08D57` accents.
+- **Hero on live site:** heavily blurred Chicago skyline daytime shot. Weakest element; clearest upgrade target.
 
-The owner likely feels proud of the medallion logo and wordmark. **Our pitch should evolve them, not replace them.** If we show up with a totally different mark, we lose the room before we start.
+The owner is proud of the medallion and wordmark. **Our pitch must EVOLVE them, not replace them.** If we present a totally different mark, we lose the room.
 
-## Current app state (what we are polishing)
+## Reference images
 
-- Sign-in: near-black background, large gold wordmark "PRESIDENTIAL / BLACK CAR" (two lines, letter-spaced, all caps, SANS-SERIF — different from the owner's italic serif), subtitle tagline in paper color, light card UI below with "Sign in or create an account", email field, "Email me a code" button, "Use a password instead" link.
-- Admin Dispatch: cream `#F6F4EF` background. Dark pill-tabs (Requests / Upcoming / Unpaid / Past). Big empty-state "All clear" checkmark. Three admin cards (Vehicles and rates / Business settings / People). Bottom tab bar with Book / Trips / Drive / Dispatch / Account.
-- Book: same cream background. Toggle "One way | By the hour". Pickup and Drop-off fields with airport chips (O'Hare / Midway / Chicago Executive / Waukegan / Milwaukee). Passenger counter. Dark "See prices" button. Styling is CLEAN but PLAIN — needs atmosphere.
-
-Reference screenshots are in `references/` alongside this file once the AI assistants upload theirs. Dwayne may also drop screenshots directly into your chat window; those are higher fidelity than any raw URL.
+- Old site home page screenshot: `https://raw.githubusercontent.com/ghettomediagroup/ai-bridge/main/projects/presidential-black-car/references/old-site-home.png`
+- Current sign-in page: see assignment section below (deploying publicly shortly; URL will appear here when ready)
+- Current admin dispatch and book page: same as above
 
 ## Assigned to Grok - Logo evolution
 
-**Goal:** Evolve the existing medallion-and-wordmark identity so it reads modern-luxury without discarding what the owner already recognizes.
+**Goal:** Evolve the existing medallion-and-wordmark identity so it reads modern-luxury without discarding what the owner recognizes.
 
 **Deliverables (4 options):**
-1. **Clean the medallion.** Keep the circular shape and Chicago skyline motif. Simplify the inner engraving. Replace the current italic serif on the curve with a tighter, more legible serif. Gold `#B08D57` ring on near-black `#0E0E10`.
-2. **Horizontal lockup.** The medallion on the left, wordmark on the right ("PRESIDENTIAL BLACK CAR" in italic serif — Didot or Bodoni family). For wide placements (website header, email signature).
+1. **Cleaned medallion.** Keep the circle + Chicago skyline motif. Simplify the inner engraving. Replace the current italic serif on the curve with a tighter, more legible serif. Gold `#B08D57` ring on near-black `#0E0E10`.
+2. **Horizontal lockup.** Medallion on the left, "PRESIDENTIAL BLACK CAR" wordmark on the right in italic serif (Didot or Bodoni). For website header, email signature.
 3. **Icon-only mark.** Just the medallion, no text. 1024x1024. For app icon, favicon, social avatar.
-4. **Monochrome stamp.** The medallion in a single color (all gold OR all paper) for printing on tinted-window decals, business cards, keyfob tags.
+4. **Monochrome stamp.** Medallion in a single color (all gold OR all paper) for printing on tinted-window decals, business cards, keyfob tags.
 
 **Constraints:**
 - Palette: `#B08D57` gold, `#0E0E10` ink, `#F6F4EF` paper. No other colors.
 - No stretch limos, top hats, crowns, or chauffeur silhouettes.
-- Must read at 48px (bottom tab bar) AND 400px (hero).
-- No fake Latin mottos or "EST. 20XX" — the owner has not confirmed a founding year.
+- Readable at 48px (bottom tab bar) AND 400px (hero).
+- No fake Latin mottos or "EST. 20XX" (founding year not confirmed).
 
-**Submit back:** PNG files on neutral background + one sentence per option explaining what you changed vs. the current site. Wrap in a `bridge-submit` block (ai: grok). Dwayne pastes to Claude Code, who commits to `references/grok-logos/` here.
+**Submit back:** PNG files + one sentence per option explaining what you changed vs. the current site. Wrap in a `bridge-submit` block (ai: grok).
 
 ## Assigned to ChatGPT - Hero image + tagline
 
-**Hero image (highest impact, do first):**
-- A black Chevy Suburban OR Lincoln Navigator (both are the kinds of vehicle the fleet includes) at night, parked or slow-rolling, on a wet Chicago street. Soft-focus skyline (NOT blurred to oblivion like the current site — a tasteful bokeh, not a Gaussian smudge).
-- Mood: discreet luxury, warm interior lighting glowing through tinted windows.
-- 16:9, 1920x1080 or larger. Composition leaves negative space on the LEFT for a sign-in card to float over the image.
-- No people visible, no visible license plates, no logos on the vehicle.
-- Avoid the generic "car in rain with neon" trope. Think editorial, not stock.
+**Hero image (highest impact; do first):**
+- Black Chevy Suburban OR Lincoln Navigator (fleet vehicles) at night, parked or slow-rolling, wet Chicago street. Soft-focus skyline bokeh (NOT the Gaussian smudge from the current site).
+- Mood: discreet luxury, warm interior lighting through tinted windows.
+- 16:9, at least 1920x1080. Negative space on the LEFT for a sign-in card to float over.
+- No people, no visible plates, no logos on the vehicle.
+- Avoid the generic "car-in-rain-with-neon" trope. Think editorial, not stock.
 
 **Tagline refinement:**
-Current site tagline: "We Provide An Extraordinary Experience To An Ordinary Service." It stumbles on "extraordinary ... ordinary service" (the contrast reads awkward). Draft **5 variations**, each under 10 words:
-
+Current site tagline stumbles on "extraordinary ... ordinary service". Draft **5 variations**, each under 10 words:
 - Two that keep the "extraordinary / ordinary" contrast but smooth it out.
-- Two that abandon the contrast and lean into the brand's actual value (discretion, time, reliability, Chicago-level professionalism).
+- Two that abandon the contrast and lean into discretion, time, reliability, Chicago professionalism.
 - One wildcard.
 
 **Submit back:** image URL (ChatGPT shared link or direct image URL) + the 5 tagline options. Wrap in a `bridge-submit` block (ai: gpt).
 
 ## Assigned to Muse - UI layout iteration
 
-**Goal:** Take the three current Expo app screens (sign-in, admin dispatch, book) and tighten them so they feel pitched at a $150+/hr limo clientele, not a prototype.
+**Goal:** Tighten the three current Expo app screens (sign-in, admin dispatch, book) so they feel pitched at a $150+/hr limo clientele, not a prototype.
 
-**What to focus on:**
-- **Typography scale.** Headers probably need to be larger and tighter-tracked. Body text may be fine. Match the owner's italic-serif energy on display type where it fits (e.g. the big "PRESIDENTIAL BLACK CAR" on sign-in could switch from sans-serif to the same Didot/Bodoni italic serif the existing site uses).
+**Focus:**
+- **Typography scale.** Headers may need to be larger and tighter-tracked. Match the owner's italic-serif display energy where it fits (the big "PRESIDENTIAL BLACK CAR" on sign-in could switch from sans-serif to the same Didot/Bodoni italic the current site uses).
 - **Spacing rhythm.** Admin dispatch cards feel floaty. Book page has lots of empty gutters.
-- **Dark-mode consistency.** Sign-in is dark, admin and book are cream. That inconsistency is jarring. Pick ONE direction (lean dark for luxury, OR lean paper for cleanliness) and apply across all three.
-- **Hero treatment.** Once ChatGPT delivers the hero image, the sign-in screen should overlay it with a frosted-glass card.
+- **Dark vs paper consistency.** Sign-in is dark; admin and book are cream. Pick ONE direction (lean dark for luxury OR lean paper for cleanliness) and apply across all three.
+- **Hero overlay.** Once ChatGPT delivers the hero image, sign-in should overlay it with a frosted-glass card.
 
-**Deliverables:** 2 Figma frames per screen (6 total). One matches the owner's existing visual language more closely (safer), one pushes it further (bolder).
+**Deliverables:** 2 Figma frames per screen (6 total). One matches the owner's existing visual language more closely (safer), one pushes further (bolder).
 
 **Submit back:** Figma public share link + one-line rationale per frame. Wrap in a `bridge-submit` block (ai: muse).
 
@@ -84,6 +92,6 @@ Current site tagline: "We Provide An Extraordinary Experience To An Ordinary Ser
 
 1. ChatGPT: hero image (biggest first-impression lift)
 2. Grok: logo evolution (so Muse has the mark to lay out around)
-3. Muse: UI frames (consumes outputs from #1 and #2)
+3. Muse: UI frames (consumes outputs from 1 and 2)
 
-Dwayne will pick finalists from each. Claude Code will integrate winners into `apps/mobile/brand.json` and the UI, then deploy to Cloudflare Pages.
+Dwayne will pick finalists. Claude Code will integrate winners into `apps/mobile/brand.json` and the UI, then deploy to Cloudflare Pages.
