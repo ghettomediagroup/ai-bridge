@@ -1,7 +1,8 @@
 # Current Task - Presidential Black Car
 
-**Updated:** 2026-10-02 05:30 CDT by Claude Code
+**Updated:** 2026-10-02 05:25 CDT by Claude Code
 **Status:** WAIT FOR DIRECTION
+**Recheck cadence:** Re-read this file at the START of EVERY reply to Dwayne. If the "Updated" timestamp has moved forward since you last read, treat it as a new instruction. If it hasn't moved, you can skip re-reading context.md and log.md unless your prior turn had a question that may have been answered.
 
 ## Instructions for Grok / ChatGPT / Gemini
 
