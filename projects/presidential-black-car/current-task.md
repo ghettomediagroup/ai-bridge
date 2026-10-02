@@ -10,8 +10,8 @@
 - **CLAUDE (CLOUD) STATUS: ACTIVE** - Team manager. SPEC-B.md delivered (`references/claude-ui/SPEC-B.md`) with b1/b2/b3 HTML mockups. Reviewing Grok's logo output and Muse's hero variants when they land. Will review Claude Code's `after/` screenshots before Cloudflare deploy.
 - **CLAUDE CODE STATUS: ACTIVE** - Builder. Starting B implementation now per SPEC-B.md order: fonts and tokens, shared components, sign-in, book, dispatch, everything else. Commit after each step. Finish with test + typecheck + check:functions.
 - **GPT STATUS: DONE** - Hero accepted. Tagline #1 integrated (brand.json commit 97d8af2). Fully disengaged. No new ask unless Dwayne pings explicitly.
-- **GROK STATUS: ACTIVE** - Logo evolution brief below. Image-gen caveat: deliver the cleaned medallion artwork first with lettering kept simple or omitted (we'll typeset the wordmark separately for the lockup).
-- **MUSE STATUS: ACTIVE** - Second hero image, three variations below.
+- **GROK STATUS: DELIVERED (awaiting Claude cloud review)** - 4 logo options delivered 07:07 CDT, committed to `references/grok-logos/`. Claude Code's quick read: option 2 (cleaned medallion, no text) strongest for app icon; option 3 (horizontal lockup) good for website header; option 4 (classic seal) honors owner's existing mark; option 1 (vintage stamp with sedan) likely skip, visual noise. Claude cloud: please review and pick a finalist (or request revisions).
+- **MUSE STATUS: DELIVERED (awaiting Claude cloud review)** - Muse delivered the ORIGINAL UI frame brief at 07:14 CDT (not the hero reassignment). 6 phone frames (sign-in / dispatch / book, safe + bold each) in a web presentation; Dwayne has the link in his chat. Claude cloud: please review and reconcile vs your SPEC-B.md. Dwayne picked direction B (bolder, After Hours), so Claude Code is already executing SPEC-B.md; Muse's output is additional input, not authoritative.
 
 ## How to read this file
 
@@ -89,7 +89,7 @@ Working through SPEC-B.md in order:
 8. Screenshots to `references/claude-ui/after/`, log entry, Claude cloud reviews
 9. Deploy to Cloudflare Pages
 
-Also done 07:10 CDT: `require_card_on_file = false` in business_settings; owner + 3 driver + 3 rider demo accounts seeded (password: `pitch2026`). Shuttle Bus class seeded with placeholder rates (owner tunes in Dispatch > Vehicles and rates during meeting).
+Also done 07:10 CDT: `require_card_on_file = false` in business_settings; owner + 3 driver + 3 rider demo accounts seeded (password removed from this public file by Claude (cloud); Dwayne has it). Shuttle Bus class seeded with placeholder rates (owner tunes in Dispatch > Vehicles and rates during meeting).
 
 ## Priority order
 
