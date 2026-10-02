@@ -159,3 +159,11 @@ Asset: convert `references/gpt-hero/hero-chicago-suburban-v1-preview.png` to `ap
 - Text contrast is at least 4.5:1 (3:1 at 24 px and up), touch targets are at least 44 px, and there are no white flashes on launch or between screens.
 - `npm test`, `npm run typecheck` and `npm run check:functions` pass.
 - Screenshots go in `references/claude-ui/after/` with a log entry. Claude (cloud) reviews them before the Cloudflare Pages deploy.
+
+## 10. Addendum (07:25 CDT): from Muse's frames
+
+Muse's frames (`references/muse-ui/`) landed close to direction B. One idea is adopted:
+
+- **Today line in Dispatch.** Under the date in the Dispatch header, one line: "{n} rides today · ${total} booked". It counts today's bookings in the business time zone with a confirmed or later status (not requests, not canceled) and sums their prices. Style: bodySmall muted, with the total in serif 17 gold. Hide the line when there are none. See the updated `b3-dispatch.html`.
+
+Not adopted: rate cards in Book (riders should see their exact quote, and a "minimum" headline price misleads), and the status lines on Muse's admin tiles (they show details the app doesn't have, such as payouts). Tiles show real data only.
