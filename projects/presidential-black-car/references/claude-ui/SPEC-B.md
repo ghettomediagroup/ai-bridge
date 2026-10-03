@@ -167,3 +167,20 @@ Muse's frames (`references/muse-ui/`) landed close to direction B. One idea is a
 - **Today line in Dispatch.** Under the date in the Dispatch header, one line: "{n} rides today · ${total} booked". It counts today's bookings in the business time zone with a confirmed or later status (not requests, not canceled) and sums their prices. Style: bodySmall muted, with the total in serif 17 gold. Hide the line when there are none. See the updated `b3-dispatch.html`.
 
 Not adopted: rate cards in Book (riders should see their exact quote, and a "minimum" headline price misleads), and the status lines on Muse's admin tiles (they show details the app doesn't have, such as payouts). Tiles show real data only.
+
+## 11. Real logo (added 2026-10-03)
+
+Dwayne supplied the owner's real logo: a circular seal with a silver, beveled "PBC" monogram, "PRESIDENTIAL" and "BLACK CAR" in classical serif capitals around the ring, five stars on each side, on a charcoal field (#25262A). It's silver, not gold, and there is no skyline. Files are in `references/brand/`.
+
+- **Sign-in:** the seal (76 px, `pbc-seal-512.png`) replaces the "PRESIDENTIAL BLACK CAR" text kicker above the headline. Phone: the block starts at safe area + 36, gap 16. Wide web: seal at 96 px. See the updated `b1-sign-in.html`.
+- **App icon:** `app-icon-1024.png` (the seal on #0E0E10). Android adaptive icon: `android-adaptive-foreground-1024.png` on a #0E0E10 background. Splash: the seal at about 160 px, centered on #0E0E10.
+- **Small sizes:** below about 64 px the ring lettering can't be read, so the web favicon and other tiny uses take the monogram (`pbc-monogram-32.png`, `pbc-monogram-48.png`, and `pbc-monogram-192.png` for the web app manifest).
+- **Don't** recolor, redraw or add effects to the seal. Before launch, ask the owner for the original vector file (AI, EPS, SVG or PDF). These PNGs are cut from a 1290 px JPEG, which is fine for the pitch.
+- **Accent color:** decided by Dwayne on 2026-10-03: gold stays (#B08D57). No token change.
+
+## 12. Wide sign-in photo (decided 2026-10-03)
+
+Dwayne approved Muse's river photo for the wide (900 px and up) sign-in. Phones keep GPT's photo, and so does the Book header band.
+
+- Copy `references/muse-hero/hero-river-wide.jpg` (1920x1080, 257 KB) to `apps/mobile/assets/images/hero-river.jpg`, plus `apps/mobile/public/` if the web build needs the plain image path like `hero-night.jpg` does.
+- Wide layout only: use it full window with `contentPosition="center"`. Add a left-to-right scrim behind the column: `rgba(14,14,16,0.75)` at 0 to transparent at 0.6, so the headline and the card read over the Marina City towers.

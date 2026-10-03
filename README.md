@@ -24,6 +24,7 @@ For a given project `<slug>`, point the other AI at these:
 ## Current projects
 
 - [presidential-black-car](projects/presidential-black-car/current-task.md)
+- [samsung-tv](projects/samsung-tv/current-task.md)
 
 ## How to submit back (V1 - manual)
 
